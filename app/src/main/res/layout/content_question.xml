@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_normal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_green_dark"
+        android:padding="@dimen/spacing_small"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tvQuestionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="Count"/>
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="Timber"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvQuestionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:text="Question Name"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption1"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="Option1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Option2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption3"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Option3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption4"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Option4" />
+</LinearLayout>
